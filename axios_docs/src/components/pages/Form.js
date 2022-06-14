@@ -12,7 +12,6 @@ import { useForm } from "react-hook-form";
                 last_name: ""
             }
         });
-config
         return (
             <form onSubmit={handleSubmit(console.log)}>
                 <input {...register("user_name", { required: true })} placeholder="User Name" />

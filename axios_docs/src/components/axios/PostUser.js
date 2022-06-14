@@ -1,14 +1,13 @@
 import React, {useState} from "react"
-import Form from "react-bootstrap/Form";
-import {Container} from "react-bootstrap";
+import Spinner from "../component/Spinner/Spinner";
 
 const PostUser = () => {
-    let axios = require('axios');
     let [state, setState] = useState({
        loading : false,
        user : {
            "user_name": "",
            "password": "",
+           "email": "",
            "telephone_number": "",
            "birth_date": "",
            "gender": "",
@@ -18,78 +17,132 @@ const PostUser = () => {
         errorMessage: ""
     });
 
-    let config = {
-        method: 'post',
-        url: 'http://127.0.0.1:3003/users',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        maxRedirects: 0,
-        data : JSON.stringify(setState.user)
-    };
-
-    axios(config)
-        .then(function (response) {
-            console.log(JSON.stringify(response.data));
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
 
     let updateInput = (event) =>{
-        setState({
+       setState({
             ...state,
             user: {
                 ...state.user,
-                [event.target.user_name] : event.target.value
+                [event.target.name] : event.target.value
             }
-        })
+        });
+    };
+
+    let {loading, user, errorMessage} = state;
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const userData = JSON.stringify( {
+                        user: {
+                            "user_name": user.user_name,
+                            "password": user.password,
+                            "email": user.email,
+                            "telephone_number": user.telephone_number,
+                            "birth_date": user.birth_date,
+                            "gender": user.gender,
+                            "first_name": user.first_name,
+                            "last_name": user.last_name
+                        }
+        });
+        const axios = require('axios');
+        let config = {
+            method: 'post',
+            withCredentials: false,
+            parameters: user,
+            url: 'http://127.0.0.1:3003/users',
+            headers:{
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            data: userData,
+        };
+        axios(config)
+            .then((response) => {
+                console.log(JSON.stringify(response.data));
+                setState(response.data)
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
     }
+
     return(
         <React.Fragment>
-            <pre>{JSON.stringify(state.user)}</pre>
-        <Container maxWidth="sm">
-            <div>
-                <Form onSubmit={""}>
-                    <div className="mb-1">
-                        <label  className="form-label">User Name</label>
-                        <input type="text" class="form-control" placeholder={"Nahuel-Zan"}/>
+            <pre>{JSON.stringify(state.user)}</pre>            {
+                loading ? <Spinner /> :
+        <React.Fragment>
+            <section className="add-user p-3">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <p className="h4 text-success fw-bold">create user</p>
+                            <p className="fst-italic"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eius eveniet, excepturi fugiat fugit labore magni officiis quisquam suscipit velit. Asperiores, cumque deleniti dicta facere nulla omnis quod recusandae unde?</p>
+                        </div>
                     </div>
-                    <div className="mb-1">
-                        <label for="exampleInputPassword1" className="form-label">Password</label>
-                        <input type="password" className="form-control" id="exampleInputPassword1"/>
+                    <div className="row">
+                        <div  className="col">
+                            <form onSubmit={handleSubmit} >
+                                <div className="mb-3">
+                                    <input
+                                        name="user_name"
+                                        value={user.user_name}
+                                        onChange={updateInput}
+                                        type="text" className="form-control" id="user_name" placeholder="user_name"/>
+                                </div>
+                                <div className="mb-3">
+                                    <input
+                                        name={"password"}
+                                        value={user.password}
+                                        onChange={updateInput}
+                                        type="password" className="form-control" id="exampleInputPassword1" placeholder={"*******"}/>
+                                </div>
+                                <div className="mb-3 mb-1-sm">
+                                    <input name="first_name"
+                                           value={user.first_name}
+                                           onChange={updateInput}
+                                           type="text" className="form-control" placeholder="first_name"/>
+                                </div>
+                                <div className="mb-3">
+                                    <input name="last_name"
+                                           value={user.last_name}
+                                           onChange={updateInput}
+                                           type="text" className="form-control" placeholder={"Brizuela"}/>
+                                </div>
+                                <div className="mb-3">
+                                    <input name="telephone_number"
+                                           value={user.telephone_number}
+                                           onChange={updateInput}
+                                           type="number" className="form-control" placeholder={"1234567890"} />
+                                </div>
+                                <div className="mb-3">
+                                    <input name="email"
+                                           value={user.email}
+                                           onChange={updateInput}
+                                           type="text" className="form-control" placeholder={"Email@email.com"}/>
+                                </div>
+                                <div className="mb-3">
+                                    <input name="birth_date"
+                                           value={user.birth_date}
+                                           onChange={updateInput}
+                                           type="date" className="form-control" placeholder={"mm/dd/yyyy"}/>
+                                </div>
+                                <div className="mb-3">
+                                    <input name="gender"
+                                           value={user.gender}
+                                           onChange={updateInput}
+                                           type="text" className="form-control" placeholder={"No Binary"}/>
+                                </div>
+                                <div className={"mb-2"}>
+                                        <button type="submit">Register</button>
+                                        <button to={"/"}> cancelar</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div className="mb-1 mb-1-sm">
-                        <label className="form-label">First Name</label>
-                        <input name="name" type="text" className="form-control" placeholder={"Nahuel"}/>
-                    </div>
-                    <div className="mb-3">
-                        <label className="form-label">Last Name</label>
-                        <input type="text" className="form-control" placeholder={"Brizuela"}/>
-                    </div>
-                    <div className="mb-3">
-                        <label className="form-label">telephone</label>
-                        <input type="number" className="form-control" placeholder={"1234567890"} />
-                    </div>
-                    <div className="mb-3">
-                        <label className="form-label">Email</label>
-                        <input type="text" className="form-control" placeholder={"Email@email.com"}/>
-                    </div>
-                    <div className="mb-3">
-                        <label className="form-label me-auto">Birthdate</label>
-                        <input type="date" className="form-control" placeholder={"mm/dd/yyyy"}/>
-                    </div>
-                    <div className="mb-3">
-                        <label className={"form-label"}>Select Your Gender</label>
-                        <input type="text" className={"form-control"} placeholder="Female/Male"/>
-                    </div>
-                    <div>
-                        <button onSubmit={""}>Enviar</button>
-                        <button onSubmit={"/"}>cancelar</button>
-                    </div>
-                </Form>
-            </div>
-        </Container>
+                </div>
+            </section>
+
+        </React.Fragment>
+            }
         </React.Fragment>
     )
 

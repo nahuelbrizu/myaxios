@@ -14,8 +14,10 @@ const App = () => {
                     <div className="grid">
                         <div className="row">
                             <div className="col">
-                                <h1 className="text-center">List Users</h1>
-                                <Link to={"/postRecipes"} className="btn btn-primary ms-2 text-center">Add</Link>
+                                <h1 className="text-center">List Recipes</h1>
+                                <Link to={"/postRecipes"} className="btn btn-primary ms-2 text-center ">
+                                    <i className="fa-solid fa-circle-plus fa-beat">Add</i>
+                                </Link>
                                 <ListRecipes/>
                             </div>
                         </div>

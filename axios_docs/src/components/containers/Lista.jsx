@@ -6,13 +6,15 @@ import React from "react";
 const Lista = () => {
     return(
     <Container fluid>
-        <section className="user-search">
+        <section className="user-container">
             <div className="container">
                 <div className="grid">
                     <div className="row">
                         <div className="col">
-                            <h1 className="text-center">List Users</h1>
-                            <Link to={"/postUser"} className="btn btn-primary text-center ms-2">Add</Link>
+                            <h1 className="text-center ms-3">List Users</h1>
+                            <Link to={"/postUser"} className="btn btn-primary text-center ms-2">
+                                <i className="fa-1x fa-circle-plus fa-beat">Add</i>
+                            </Link>
                             <List/>
                         </div>
                     </div>

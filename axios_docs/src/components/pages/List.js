@@ -6,10 +6,13 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import {styled} from "@mui/material";
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import {makeStyles} from "@material-ui/core/styles";
 import {Modal, Button, TextField} from "@material-ui/core"
 import { Edit, Delete} from "@material-ui/icons"
+import {Services} from "../../services/Services";
+import Spinner from "../component/Spinner/Spinner";
+import {Link} from "react-router-dom";
 
 const urlUser= "http://127.0.0.1:3003/users";
 
@@ -55,112 +58,85 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
 const List = () => {
-    const styles = useStyles();
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [modalInsertar, setModalInsert] = useState(false);
-    const [users, setUsers] = useState({
-        "user_name":"",
-        "password": "",
-        "telephone_number": "",
-        "birth_date": "",
-        "gender": "",
-        "first_name": "",
-        "last_name": "",
+    let [state, setState]= useState({
+        loading: false,
+        Users: [],
+        errorMessage: ""
     })
 
 
-    const handleChange=(e)=>{
-        const {name, value}=e.target;
-        setUsers(prevState=>({
-            ...prevState,
-            [name]: value
-        }))
-        console.log(users);
-    }
-    const abrirCerrarModalInsertar = () => {
-        setModalInsert(!modalInsertar);
-        modalInsertar(setUsers);
-    }
+    useEffect( () => {
+        const fetchData = async () => {
+        try {
+            setState({ ...state, loading: true});
+            const response = await Services.getAllUsers();
+            setState({
+                ...state,
+                loading: false,
+                Users: response.data
+            });
+        }
+        catch (error){
+            setState({
+                ...state,
+                loading: false,
+                errorMessage: error.message
+            })
+        }
+        };
+        fetchData();
+    }, []);
 
-    useEffect(() => {
-        fetch(urlUser)
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setUsers(result);
-                },
+    let {loading, Users, errorMessage} = state;
 
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            )
-    }, [])
+    return (
+        <React.Fragment>
+        {
+            loading ? <Spinner /> :
+                <React.Fragment>
+                <section className="user-list">
+                    <div className="container">
+                        <div className="row">
+                            <TableContainer component={Paper}>
+                             <Table sx={{minWidth: 700}} aria-label="customized table">
+                                  <TableHead>
+                                      <TableRow>
+                                         <StyledTableCell>ID</StyledTableCell>
+                                         <StyledTableCell align="right">User Name</StyledTableCell>
+                                         <StyledTableCell align="right">Email</StyledTableCell>
+                                          <StyledTableCell align="right">Last Name</StyledTableCell>
+                                          <StyledTableCell align="right">telephone number</StyledTableCell>
+                                          <StyledTableCell align="right">friendships length</StyledTableCell>
+                                          <StyledTableCell align="right">recipes length</StyledTableCell>
+                                          <StyledTableCell align="right">Acciones</StyledTableCell>
+                                      </TableRow>
+                                  </TableHead>
+                                 <TableBody> { Users.length > 0  &&
+                                    Users.map((user) => (
+                                                        <StyledTableRow key={user.id}>
+                                                            <StyledTableCell component="th" scope="row">{user.id}</StyledTableCell>
+                                                            <StyledTableCell align="right">{user.user_name}</StyledTableCell>
+                                                            <StyledTableCell align="right">{user.email}</StyledTableCell>
+                                                            <StyledTableCell align="right">{user.last_name}</StyledTableCell>
+                                                            <StyledTableCell align="right">{user.telephone_number}</StyledTableCell>
+                                                            <StyledTableCell align="right">{user.friendships.length}</StyledTableCell>
+                                                            <StyledTableCell align="right">{user.recipes.length}</StyledTableCell>
+                                                            <StyledTableCell align="right"><Link to={`/edit/${user.id}`}>
+                                                                <Edit /> </Link>
+                                                                <Link to={`/delete/${user.id}`} className={"my-1"} >
+                                                                    <Delete /> </Link>
+                                                            </StyledTableCell>
+                                        </StyledTableRow>))}
+                                 </TableBody>
+                             </Table>
+                            </TableContainer>
+                        </div>
+                    </div>
+                </section>
+            </React.Fragment>
+        }
+        </React.Fragment>
 
-    const bodyInsertar = (
-        <div className={styles.modal}>
-            <h3>New User</h3>
-            <TextField name="name" className={styles.inputMaterial} label="name" onChange={handleChange} />
-            <br/>
-            <TextField name="user name" className={styles.inputMaterial} label='user name' onChange={handleChange}/>
-            <br/>
-            <TextField name="password" className={styles.inputMaterial} label='password' onChange={handleChange}/>
-            <br/>
-            <TextField name="last_name" className={styles.inputMaterial} label='last_name' onChange={handleChange}/>
-            <br/>
-            <TextField name="telephone_number" className={styles.inputMaterial} label='telephone_number' onChange={handleChange}/>
-            <div>
-                <Button> insertar</Button>
-                <Button onClick={abrirCerrarModalInsertar}> Cancelar</Button>
-            </div>
-        </div>
-    )
-    if (error) {
-        return <div>Error: {error['message']}</div>;
-    } else if (!isLoaded) {
-        return <div><h2 className="text-center">Loading...</h2></div>;
-    } else {
-        return (
-            <div>
-                <TableContainer component={Paper}>
-                    <Table sx={{minWidth: 700}} aria-label="customized table">
-                        <TableHead>
-                            <TableRow>
-                                <StyledTableCell>ID</StyledTableCell>
-                                <StyledTableCell align="right">User Name</StyledTableCell>
-                                <StyledTableCell align="right">Email</StyledTableCell>
-                                <StyledTableCell align="right">Last Name</StyledTableCell>
-                                <StyledTableCell align="right">telephone number</StyledTableCell>
-                                <StyledTableCell align="right">friendships length</StyledTableCell>
-                                <StyledTableCell align="right">recipes length</StyledTableCell>
-                                <StyledTableCell align="right">Acciones</StyledTableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody> {users.map((user) => (
-                            <StyledTableRow key={user.id}>
-                                <StyledTableCell component="th" scope="row">{user.id}</StyledTableCell>
-                                <StyledTableCell align="right">{user.user_name}</StyledTableCell>
-                                <StyledTableCell align="right">{user.email}</StyledTableCell>
-                                <StyledTableCell align="right">{user.last_name}</StyledTableCell>
-                                <StyledTableCell align="right">{user.telephone_number}</StyledTableCell>
-                                <StyledTableCell align="right">{user.friendships.length}</StyledTableCell>
-                                <StyledTableCell align="right">{user.recipes.length}</StyledTableCell>
-                                <StyledTableCell align="right"><Edit /> <Delete />
-                                    {/*   <Button onClick={()=>abrirCerrarModalInsertar()}>Insertar</Button>*/}
-                                </StyledTableCell>
-                            </StyledTableRow>  ))}
-                        </TableBody>
-                    </Table>
-                </TableContainer>
-                <Modal
-                    open={modalInsertar}
-                    onClose={abrirCerrarModalInsertar}>
-                    {bodyInsertar}
-                </Modal>
-            </div>
         );
-    }
 }
 export default List;
