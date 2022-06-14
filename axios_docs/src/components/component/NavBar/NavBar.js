@@ -12,7 +12,7 @@ const NavBar = () => {
                 <IconButton color="primary" className="me-auto">Free Food</IconButton></Link>
                 <Nav className="me-auto">
                     <Link to="/Lista" className="nav-link" >Users</Link>
-                    <Link to="/App" className="nav-link">recipes</Link>
+                    <Link to="/App" className="nav-link">Recipes</Link>
                 </Nav>
         </div>
     </Navbar>
