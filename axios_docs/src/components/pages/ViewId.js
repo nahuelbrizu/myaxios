@@ -42,7 +42,7 @@ let ViewId = () => {
     useEffect(async () => {
         try {
             setView({ ...view, loading: true});
-            let response = await Services.getUser();
+            let response = await Services.getAllUsers();
             setView({
                 ...view,
                 loading: false,

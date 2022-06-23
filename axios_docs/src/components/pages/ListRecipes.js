@@ -10,8 +10,9 @@ import Table from "@mui/material/Table";
 import TableHead from "@mui/material/TableHead";
 import TableBody from "@mui/material/TableBody";
 import {Delete, Edit} from "@material-ui/icons";
+import Spinner from "../component/Spinner/Spinner";
+import Services from "../../services/Services";
 
-const urlRecipes= "http://127.0.0.1:3003";
 
 const  useStyles = makeStyles((theme) => ({
     modal:{
@@ -82,7 +83,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 
     useEffect(() => {
-        fetch(urlRecipes + "/recipes")
+        fetch("http://localhost:3003/recipes")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -114,7 +115,9 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     if (error) {
         return <div>Error: {error['message']}</div>;
     } else if (!isLoaded) {
-        return <div><h2 className="text-center">Loading...</h2></div>;
+        return <div>
+            <Spinner/>
+        </div>;
     } else {
         return (
             <div>

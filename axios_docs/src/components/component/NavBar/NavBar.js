@@ -13,7 +13,7 @@ const NavBar = () => {
                 <Nav className="me-auto">
                     <Link to="/Lista" className="nav-link" >Users</Link>
                     <Link to="/App" className="nav-link">Recipes</Link>
-
+                    <Link to={"/get"} className="nav-link">Bitcoins</Link>
                 </Nav>
         </div>
     </Navbar>

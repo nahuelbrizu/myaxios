@@ -11,6 +11,7 @@ import PostRecipes from "../components/axios/PostRecipes";
 import PostUser from "../components/axios/PostUser";
 import ViewId from "../components/pages/ViewId"
 import Edit from  "../components/pages/Edit"
+import Get from "../components/axios/Get";
 
 const Router = () => {
   return(
@@ -21,8 +22,7 @@ const Router = () => {
                   <Route exact path="/App" element={<App/>} />
                   <Route exact path="/PostRecipes"  element={<PostRecipes/>}/>
                     <Route exact path="/PostUser"  element={<PostUser/>}/>
-                    <Route exact path={`/edit/`}  element={<ViewId/>}/>
-                    <Route exact path="/viewId/"  element={<Edit/>}/>
+                    <Route exact path="/get"  element={<Get/>}/>
                  </Routes>
       </BrowserRouter>
   )

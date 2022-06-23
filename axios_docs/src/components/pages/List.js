@@ -14,7 +14,6 @@ import {Services} from "../../services/Services";
 import Spinner from "../component/Spinner/Spinner";
 import {Link} from "react-router-dom";
 
-const urlUser= "http://127.0.0.1:3003/users";
 
 const  useStyles = makeStyles((theme) => ({
     modal:{
@@ -84,7 +83,6 @@ const List = () => {
             })
         }
         };
-        fetchData();
     }, []);
 
     let {loading, Users, errorMessage} = state;
