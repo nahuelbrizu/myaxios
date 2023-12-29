@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90666981-6b21-4cab-968d-ec6321d6d8c0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ColoresFlasheros/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ColoresFlasheros/.idea/ColoresFlasheros.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ColoresFlasheros/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ColoresFlasheros/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ColoresFlasheros/neumorphic-preloader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/Calendario/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/Calendario/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/Calendario/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/background-video/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/background-video/comp_4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/background-video/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/background-video/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/notas/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/notas/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HTML-CSS-JavaScript-projects/notas/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contactUs/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contactUs/.idea/contactUs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contactUs/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contactUs/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contactUs/Contact-us-form-validation-Using-Javascript-M8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contactUs/sample-contact-us-page" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/craco.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Cart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Charts/LineChart.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Charts/Pie.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Charts/SparkLine.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Charts/Stacked.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/ChartsHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Chat.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/NavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Notification.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/ThemeSettings.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/components/UserProfile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/contexts/contextProvider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/avatar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/avatar3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/avatar4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/dummy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/product9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/data/welcome-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Calendar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Area.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Bar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/ColorMapping.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Financial.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Line.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Pie.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Pyramid.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Charts/Stacked.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/ColorPicker.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Customers.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Ecommerce.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Editor.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Employees.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Kanban.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dashboardApp/dashboard/src/pages/Orders.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food-app-react/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food-app-react/src/components/Popular.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food-app-react/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food/src/components/Popular.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food/src/components/Recipes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food/src/pages/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/food/src/pages/Pages.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/.idea/food.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/ChiefSection.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/ChiefsCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/CustomImg.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/HeroSection.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/ImproveSkills.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/NavBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/QuoteSections.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/components/SideBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/styles/partials/_animations.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/styles/partials/_hero-section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/styles/partials/_improve-section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/styles/partials/_navBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../foodAppReact/n/food/src/styles/partials/_quote-section.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/Portfolio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../portfolio/amplifyapp/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/quinna.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/.idea/random-stuff.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/100-Projects-HTML-CSS-JavaScript" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/html-css-examples" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/touch-slider/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/touch-slider/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/touch-slider/.idea/touch-slider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/touch-slider/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../random-stuff/touch-slider/Full-Screen-Touch-Slider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../slideshow/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../slideshow/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../slideshow/.idea/slideshow.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../slideshow/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../slideshow/bo-slider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../slideshow/slide-show" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/.idea/videoSlider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/Responsive-Travel-Website-with-Video-Slider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/Responsive-Video-Slider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/VideoGallery" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/chrome-mp4-player-with-subtitles" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/hogwarts-music-video" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoSlider/travel-video-slider" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videobg/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videobg/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videobg/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videobg/.idea/videobg.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videobg/video-bg-section" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/basic_api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/basic_api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/custom_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/custom_header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/head_req.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/head_req.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/post_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/post_form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/post_json.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/post_json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/status_code/status_code.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/api/status_code/status_code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/get_req.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/get_req.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/get_req_async.js" beforeDir="false" afterPath="$PROJECT_DIR$/../AxiosT/a_tuto/src/components/axios/get_req_async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/axios/Get.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/axios/Get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/axios/PostUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/axios/PostUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/component/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/component/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/containers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/containers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/pages/Edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/pages/Edit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/pages/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/pages/List.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/components/pages/ViewId.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/components/pages/ViewId.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/routes/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/routes/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../axios_docs/src/services/Services.js" beforeDir="false" afterPath="$PROJECT_DIR$/../axios_docs/src/services/Services.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../contacts/a/src/components/component/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../contacts/a/src/components/component/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myaxios/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myaxios/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myaxios/src/Crypto.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../myaxios/src/Crypto.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quinna/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quinna/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quinna/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/quinna/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-hooks/src/components/AddUserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/src/components/AddUserForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-hooks/src/components/EditUserForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/src/components/EditUserForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-hooks/src/components/EditYo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/src/components/EditYo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react-hooks/src/components/UserTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../react-hooks/src/components/UserTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../type/src/axios/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../type/src/axios/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/quinna" />
+  </component>
+  <component name="ProjectId" id="2M6jRRdgKGsk8LRYcNZGQbQSpoO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90666981-6b21-4cab-968d-ec6321d6d8c0" name="Changes" comment="" />
+      <created>1677094921847</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677094921847</updated>
+      <workItem from="1677094925525" duration="83000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
